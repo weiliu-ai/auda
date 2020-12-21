@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-#在xmuda的基础上做对抗式学习
 import os
 import os.path as osp
 import argparse
