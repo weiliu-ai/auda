@@ -1,0 +1,234 @@
+0.001
+145000  145000
+2020-09-06 21:46:22,338 xmuda.validate INFO: 2D overall accuracy=98.40%
+2020-09-06 21:46:22,339 xmuda.validate INFO: 2D overall IOU=48.30
+2020-09-06 21:46:22,339 xmuda.validate INFO: 2D Average precision =19.68
+2020-09-06 21:46:22,341 xmuda.validate INFO: 2D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      84.37 | 68.94 |   73586 |
+| pedestrian       |      39.77 | 17.02 |     259 |
+| bike             |       4.60 |  4.50 |    1066 |
+| traffic_boundary |      56.99 | 52.67 |    1595 |
+| background       |      99.07 | 98.36 | 1793287 |
++------------------+------------+-------+---------+
+2020-09-06 21:46:22,341 xmuda.validate INFO: 3D overall accuracy=98.43%
+2020-09-06 21:46:22,341 xmuda.validate INFO: 3D overall IOU=45.46
+2020-09-06 21:46:22,342 xmuda.validate INFO: 3D Average precision =19.69
+2020-09-06 21:46:22,343 xmuda.validate INFO: 3D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      89.91 | 73.45 |   73586 |
+| pedestrian       |      77.22 |  7.63 |     259 |
+| bike             |      27.39 | 19.52 |    1066 |
+| traffic_boundary |      58.87 | 28.28 |    1595 |
+| background       |      98.86 | 98.41 | 1793287 |
++------------------+------------+-------+---------+
+2020-09-06 21:46:22,343 xmuda.validate INFO: 2D+3D overall accuracy=98.84%
+2020-09-06 21:46:22,343 xmuda.validate INFO: 2D+3D overall IOU=53.00
+2020-09-06 21:46:22,344 xmuda.validate INFO: 2D+3D Average precision =19.77
+2020-09-06 21:46:22,345 xmuda.validate INFO: 2D+3D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      87.42 | 76.32 |   73586 |
+| pedestrian       |      45.17 | 26.71 |     259 |
+| bike             |       6.00 |  5.96 |    1066 |
+| traffic_boundary |      60.75 | 57.20 |    1595 |
+| background       |      99.41 | 98.82 | 1793287 |
++------------------+------------+-------+---------+
+
+
+
+
+lambda = 0.01 
+python xmuda/test.py --cfg=configs/nuscenes/day_night/auda.yaml  @/model_2d_145000.pth @/model_3d_145000.pth
+
+Load ('test_night',)
+2020-09-18 21:45:32,954 xmuda.validate INFO: Validation
+2020-09-18 21:45:34,269 xmuda.validate INFO: iter: 1/38  seg_loss_2d: 0.0318 (0.0318)  seg_loss_3d: 0.0256 (0.0256)  time: 1.3150 (1.3150)  data: 0.4851 (0.4851)  max mem: 1786
+2020-09-18 21:45:54,097 xmuda.validate INFO: 2D overall accuracy=98.18%
+2020-09-18 21:45:54,098 xmuda.validate INFO: 2D overall IOU=47.14
+2020-09-18 21:45:54,098 xmuda.validate INFO: 2D Average precision =19.64
+2020-09-18 21:45:54,104 xmuda.validate INFO: 2D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      79.16 | 64.45 |   73586 |
+| pedestrian       |      29.73 | 12.16 |     259 |
+| bike             |       1.69 |  1.61 |    1066 |
+| traffic_boundary |      66.71 | 59.31 |    1595 |
+| background       |      99.05 | 98.14 | 1793287 |
++------------------+------------+-------+---------+
+2020-09-18 21:45:54,105 xmuda.validate INFO: 3D overall accuracy=98.44%
+2020-09-18 21:45:54,105 xmuda.validate INFO: 3D overall IOU=45.59
+2020-09-18 21:45:54,105 xmuda.validate INFO: 3D Average precision =19.69
+2020-09-18 21:45:54,106 xmuda.validate INFO: 3D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      89.81 | 73.26 |   73586 |
+| pedestrian       |      72.59 |  8.21 |     259 |
+| bike             |      26.36 | 20.47 |    1066 |
+| traffic_boundary |      55.92 | 27.58 |    1595 |
+| background       |      98.88 | 98.42 | 1793287 |
++------------------+------------+-------+---------+
+2020-09-18 21:45:54,106 xmuda.validate INFO: 2D+3D overall accuracy=98.73%
+2020-09-18 21:45:54,106 xmuda.validate INFO: 2D+3D overall IOU=52.69
+2020-09-18 21:45:54,106 xmuda.validate INFO: 2D+3D Average precision =19.75
+2020-09-18 21:45:54,107 xmuda.validate INFO: 2D+3D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      84.43 | 73.71 |   73586 |
+| pedestrian       |      40.54 | 24.25 |     259 |
+| bike             |       4.97 |  4.96 |    1066 |
+| traffic_boundary |      66.08 | 61.82 |    1595 |
+| background       |      99.41 | 98.70 | 1793287 |
++------------------+------------+-------+---------+
+
+
+
+0.1
+ python xmuda/test.py --cfg=configs/nuscenes/day_night/auda.yaml  @/model_2d_120000.pth @/model_3d_075000.pth
+2020-09-24 06:25:50,185 xmuda.validate INFO: 2D overall accuracy=98.38%
+2020-09-24 06:25:50,185 xmuda.validate INFO: 2D overall IOU=48.07
+2020-09-24 06:25:50,186 xmuda.validate INFO: 2D Average precision =19.68
+2020-09-24 06:25:50,192 xmuda.validate INFO: 2D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      83.02 | 68.22 |   73586 |
+| pedestrian       |      31.66 | 16.53 |     259 |
+| bike             |       2.91 |  2.80 |    1066 |
+| traffic_boundary |      58.62 | 54.46 |    1595 |
+| background       |      99.11 | 98.34 | 1793287 |
++------------------+------------+-------+---------+
+2020-09-24 06:25:50,192 xmuda.validate INFO: 3D overall accuracy=98.49%
+2020-09-24 06:25:50,192 xmuda.validate INFO: 3D overall IOU=44.78
+2020-09-24 06:25:50,193 xmuda.validate INFO: 3D Average precision =19.70
+2020-09-24 06:25:50,193 xmuda.validate INFO: 3D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      88.12 | 73.91 |   73586 |
+| pedestrian       |      69.50 |  5.44 |     259 |
+| bike             |      17.17 | 13.11 |    1066 |
+| traffic_boundary |      58.87 | 32.95 |    1595 |
+| background       |      99.00 | 98.48 | 1793287 |
++------------------+------------+-------+---------+
+2020-09-24 06:25:50,194 xmuda.validate INFO: 2D+3D overall accuracy=98.81%
+2020-09-24 06:25:50,194 xmuda.validate INFO: 2D+3D overall IOU=50.43
+2020-09-24 06:25:50,194 xmuda.validate INFO: 2D+3D Average precision =19.76
+2020-09-24 06:25:50,195 xmuda.validate INFO: 2D+3D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      85.65 | 75.49 |   73586 |
+| pedestrian       |      33.59 | 21.17 |     259 |
+| bike             |       1.03 |  1.01 |    1066 |
+| traffic_boundary |      58.43 | 55.68 |    1595 |
+| background       |      99.45 | 98.79 | 1793287 |
++------------------+------------+-------+---------+
+
+
+
+
+
+
+
+
+PL
+2020-09-12 04:32:14,464 xmuda.validate INFO: 2D overall accuracy=98.36%
+2020-09-12 04:32:14,464 xmuda.validate INFO: 2D overall IOU=48.95
+2020-09-12 04:32:14,465 xmuda.validate INFO: 2D Average precision =19.67
+2020-09-12 04:32:14,470 xmuda.validate INFO: 2D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      82.53 | 67.77 |   73586 |
+| pedestrian       |      31.27 | 20.20 |     259 |
+| bike             |       0.28 |  0.28 |    1066 |
+| traffic_boundary |      67.08 | 58.18 |    1595 |
+| background       |      99.11 | 98.33 | 1793287 |
++------------------+------------+-------+---------+
+2020-09-12 04:32:14,470 xmuda.validate INFO: 3D overall accuracy=98.86%
+2020-09-12 04:32:14,470 xmuda.validate INFO: 3D overall IOU=48.10
+2020-09-12 04:32:14,470 xmuda.validate INFO: 3D Average precision =19.77
+2020-09-12 04:32:14,470 xmuda.validate INFO: 3D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      86.51 | 78.03 |   73586 |
+| pedestrian       |      65.64 | 11.51 |     259 |
+| bike             |      23.26 | 20.62 |    1066 |
+| traffic_boundary |      50.16 | 31.51 |    1595 |
+| background       |      99.46 | 98.85 | 1793287 |
++------------------+------------+-------+---------+
+2020-09-12 04:32:14,471 xmuda.validate INFO: 2D+3D overall accuracy=98.85%
+2020-09-12 04:32:14,471 xmuda.validate INFO: 2D+3D overall IOU=51.86
+2020-09-12 04:32:14,471 xmuda.validate INFO: 2D+3D Average precision =19.77
+2020-09-12 04:32:14,471 xmuda.validate INFO: 2D+3D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      84.88 | 75.95 |   73586 |
+| pedestrian       |      34.75 | 26.47 |     259 |
+| bike             |       1.78 |  1.78 |    1066 |
+| traffic_boundary |      59.37 | 56.27 |    1595 |
+| background       |      99.53 | 98.83 | 1793287 |
++------------------+------------+-------+---------+
+
+
+1
+python xmuda/test.py --cfg=configs/nuscenes/day_night/auda.yaml @/model_2d_090000.pth @/model_3d_145000.pth
+2020-09-26 20:55:13,951 xmuda.validate INFO: Validation
+2020-09-26 20:55:15,249 xmuda.validate INFO: iter: 1/38  seg_loss_2d: 0.0308 (0.0308)  seg_loss_3d: 0.0254 (0.0254)  time: 1.2975 (1.2975)  data: 0.5025 (0.5025)  max mem: 1786
+2020-09-26 20:55:34,719 xmuda.validate INFO: 2D overall accuracy=98.33%
+2020-09-26 20:55:34,719 xmuda.validate INFO: 2D overall IOU=48.15
+2020-09-26 20:55:34,720 xmuda.validate INFO: 2D Average precision =19.67
+2020-09-26 20:55:34,726 xmuda.validate INFO: 2D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      82.84 | 67.45 |   73586 |
+| pedestrian       |      21.24 | 13.29 |     259 |
+| bike             |       1.22 |  1.13 |    1066 |
+| traffic_boundary |      67.59 | 60.56 |    1595 |
+| background       |      99.06 | 98.30 | 1793287 |
++------------------+------------+-------+---------+
+2020-09-26 20:55:34,726 xmuda.validate INFO: 3D overall accuracy=98.46%
+2020-09-26 20:55:34,726 xmuda.validate INFO: 3D overall IOU=45.46
+2020-09-26 20:55:34,726 xmuda.validate INFO: 3D Average precision =19.69
+2020-09-26 20:55:34,726 xmuda.validate INFO: 3D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      89.34 | 73.47 |   73586 |
+| pedestrian       |      69.11 |  8.01 |     259 |
+| bike             |      26.64 | 18.55 |    1066 |
+| traffic_boundary |      60.69 | 28.85 |    1595 |
+| background       |      98.91 | 98.43 | 1793287 |
++------------------+------------+-------+---------+
+2020-09-26 20:55:34,727 xmuda.validate INFO: 2D+3D overall accuracy=98.72%
+2020-09-26 20:55:34,727 xmuda.validate INFO: 2D+3D overall IOU=51.46
+2020-09-26 20:55:34,727 xmuda.validate INFO: 2D+3D Average precision =19.74
+2020-09-26 20:55:34,727 xmuda.validate INFO: 2D+3D class-wise segmentation accuracy and IoU.
++------------------+------------+-------+---------+
+| Class            |   Accuracy |   IOU |   Total |
+|------------------+------------+-------+---------|
+| vehicle          |      85.84 | 73.94 |   73586 |
+| pedestrian       |      30.50 | 22.70 |     259 |
+| bike             |       1.13 |  1.11 |    1066 |
+| traffic_boundary |      65.58 | 60.85 |    1595 |
+| background       |      99.35 | 98.69 | 1793287 |
++------------------+------------+-------+---------+
+
+
+
+
+
+
+
