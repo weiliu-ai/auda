@@ -84,7 +84,7 @@ def train(cfg, output_dir='', run_name=''):
     # Build models, optimizer, scheduler, checkpointer, etc.
     # ---------------------------------------------------------------------------- #
 
-    LAMBDA_ADV_MAIN = 0.0001 
+    LAMBDA_ADV_MAIN = 0.001 
     cudnn.benchmark = True
     cudnn.enabled = True
 
