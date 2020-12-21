@@ -3,7 +3,7 @@ from torch import nn
 
 #input_channels: the number of input channels
 #ndf: number output channels of the network
-def get_2d_fc_discriminator(input_channels=64, ndf=64):
+def get_fc_discriminator(input_channels=64, ndf=64):
     return nn.Sequential(
         nn.Conv2d(input_channels, ndf, kernel_size=4, stride=2, padding=1),
         nn.LeakyReLU(negative_slope=0.2, inplace=True),
