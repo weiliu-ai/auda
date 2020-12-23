@@ -10,7 +10,7 @@ Tested with
 * [nuscenes-devkit](https://github.com/nutonomy/nuscenes-devkit)
 
 ## Model zoo
- The models with the scores can be downloaed from [Baidu Cloud](https://pan.baidu.com/s/1u9wZkjdaFAfF2rNLsQVPOw)(Extraction code: smwp).
+ The models with the scores can be downloaded from [Baidu Cloud](https://pan.baidu.com/s/1u9wZkjdaFAfF2rNLsQVPOw)(Extraction code: smwp).
 
 ## Acknowledgements
 Note that this code is heavily borrowed from [xMUDA](https://github.com/valeoai/xMUDA) and [ADVENT](https://github.com/valeoai/ADVENT).
