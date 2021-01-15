@@ -253,7 +253,11 @@ class A2D2SCN(A2D2Base):
 
         if self.use_image:
             out_dict['img_indices'] = out_dict['img_indices'][idxs]
-
+            
+        out_dict.update({
+            'orig_seg_label': seg_label,
+            'orig_points_idx': idxs,
+        })
         return out_dict
 
 
