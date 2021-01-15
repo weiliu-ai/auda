@@ -158,7 +158,7 @@ class SemanticKITTISCN(SemanticKITTIBase):
                  bottom_crop=tuple(),  # 2D augmentation (also effects 3D)
                  fliplr=0.0,  # 2D augmentation
                  color_jitter=None,  # 2D augmentation
-                 output_orig=False
+                 output_orig=True
                  ):
         super().__init__(split,
                          preprocess_dir,
@@ -272,7 +272,11 @@ class SemanticKITTISCN(SemanticKITTIBase):
                 'orig_seg_label': seg_label,
                 'orig_points_idx': idxs,
             })
-
+       
+        out_dict.update({
+            'orig_seg_label': seg_label,
+            'orig_points_idx': idxs,
+        })
         return out_dict
 
 
