@@ -13,9 +13,9 @@ DATASET_SOURCE:
 DATASET_TARGET:
   TYPE: "NuScenesSCN"
   TRAIN: ("train_singapore",)
-  VAL: ("test_singapore",)
+  VAL: ("val_singapore",)
   TEST: ("test_singapore",)
-#  VAL: ("val_singapore",)
+
   NuScenesSCN:
     preprocess_dir: "/media/qq/data/datasets/segmentation/nuscenes_preprocess_xmuda/v1.0/preprocess"
     nuscenes_dir: "/media/qq/data/datasets/segmentation/nuscenes/v1.0-trainval"  # only front cam images are needed
