@@ -14,7 +14,7 @@ DATASET_SOURCE:
 DATASET_TARGET:
   TYPE: "SemanticKITTISCN"
   TRAIN: ("train",)
-  VAL: ("test",)
+  VAL: ("val",)
   TEST: ("test",)
   SemanticKITTISCN:
     preprocess_dir: "/media/weiliu/New Volume1/data/datasets/3D_segmentation/semantic_kitti_preprocess/preprocess"
