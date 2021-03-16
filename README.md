@@ -10,10 +10,10 @@ Tested with
 * [nuscenes-devkit](https://github.com/nutonomy/nuscenes-devkit)
 
 ## Model zoo
- The models with the scores can be downloaded from [Baidu Cloud](https://pan.baidu.com/s/1PiXhdYq0HSsHjLCuG30s2w)(Extraction code: p5fj).
+ The models with the scores can be downloaded from [Baidu Cloud](https://pan.baidu.com/s/1PiXhdYq0HSsHjLCuG30s2w) (Extraction code: p5fj).
 
 ## Acknowledgements
-Note that this code is heavily borrowed from [xMUDA](https://github.com/valeoai/xMUDA) and [ADVENT](https://github.com/valeoai/ADVENT).
+Note that this code is heavily borrowed from [xMUDA](https://github.com/valeoai/xMUDA) and [ADVENT] (https://github.com/valeoai/ADVENT).
 
 ## License
 AUDA is released under the [Apache 2.0 license](./LICENSE).
